@@ -6,3 +6,6 @@ On the 63rd MIG-meeting, it was decided to establish an ad-hoc group to facilita
 
 ## Relations to other actions
 The work done here is related to what has been done on alternative encodings, see https://github.com/INSPIRE-MIF/2017.2.
+
+## Examples
+Some examples of GeoPackage files that are currently provided by member states are listed on [this page](/examples/overview.md).

@@ -1,0 +1,1087 @@
+{
+	"schemas": [
+		{
+			"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+			"typeIndex": [
+				{
+					"ref": 0,
+					"name": "DatasetDefaultProperties",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 1,
+					"name": "CodelistProperties",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 2,
+					"name": "NoiseContours_majorRoadsIncludingAgglomeration_Lden",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 3,
+					"name": "NoiseContours_majorRoadsIncludingAgglomeration_Lnight",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 4,
+					"name": "Voidables",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 5,
+					"name": "ExposureMajorRoad",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 6,
+					"name": "ExposureValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 7,
+					"name": "ESTATUnitReference",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 8,
+					"name": "CategoryType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 9,
+					"name": "NoiseSourceTypeValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 10,
+					"name": "NoiseSourceValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 11,
+					"name": "ExposureType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				},
+				{
+					"ref": 12,
+					"name": "UrlType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg"
+				}
+			],
+			"mappingRelevant": [0,1,2,3,4,5,6,7,8,9,10,11,12],
+			"types": [
+				{
+					"id": 0,
+					"name": "DatasetDefaultProperties",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"fid"}]
+					},
+					"declares": [
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "DatasetDefaultProperties.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "tableName",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "propertyName",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "attribute",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "defaultValue",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 1,
+					"name": "CodelistProperties",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "CodelistProperties.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "tableName",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "propertyName",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "codelist",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "NoiseContours_majorRoadsIncludingAgglomeration_Lden",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "measureTime_beginPosition",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "measureTime_endPosition",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "category",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"ref": 8
+							}
+						},
+						{
+							"name": "source",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 9
+							}
+						},
+						{
+							"name": "location",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "POLYGON",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "eu.esdihumboldt.hale.common.schema.geometry.GeometryProperty",
+									"geometry-metadata": {
+										"@type": "properties",
+										"@value": {"srsText":"PROJCS[\"Amersfoort / RD New\",GEOGCS[\"Amersfoort\",DATUM[\"Amersfoort\",SPHEROID[\"Bessel 1841\",6377397.155,299.1528128,AUTHORITY[\"EPSG\",\"7004\"]],AUTHORITY[\"EPSG\",\"6289\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.01745329251994328,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4289\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],PROJECTION[\"Oblique_Stereographic\"],PARAMETER[\"latitude_of_origin\",52.15616055555555],PARAMETER[\"central_meridian\",5.38763888888889],PARAMETER[\"scale_factor\",0.9999079],PARAMETER[\"false_easting\",155000],PARAMETER[\"false_northing\",463000],AUTHORITY[\"EPSG\",\"28992\"],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH]]","srs":"28992","authName":"EPSG","dimension":0}
+									},
+									"geometry-type": "org.locationtech.jts.geom.Polygon",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "NoiseContours_majorRoadsIncludingAgglomeration_Lden.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 3,
+					"name": "NoiseContours_majorRoadsIncludingAgglomeration_Lnight",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "measureTime_beginPosition",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "measureTime_endPosition",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "category",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"ref": 8
+							}
+						},
+						{
+							"name": "source",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 9
+							}
+						},
+						{
+							"name": "location",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "POLYGON",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "eu.esdihumboldt.hale.common.schema.geometry.GeometryProperty",
+									"geometry-metadata": {
+										"@type": "properties",
+										"@value": {"srsText":"PROJCS[\"Amersfoort / RD New\",GEOGCS[\"Amersfoort\",DATUM[\"Amersfoort\",SPHEROID[\"Bessel 1841\",6377397.155,299.1528128,AUTHORITY[\"EPSG\",\"7004\"]],AUTHORITY[\"EPSG\",\"6289\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.01745329251994328,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4289\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],PROJECTION[\"Oblique_Stereographic\"],PARAMETER[\"latitude_of_origin\",52.15616055555555],PARAMETER[\"central_meridian\",5.38763888888889],PARAMETER[\"scale_factor\",0.9999079],PARAMETER[\"false_easting\",155000],PARAMETER[\"false_northing\",463000],AUTHORITY[\"EPSG\",\"28992\"],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH]]","srs":"28992","authName":"EPSG","dimension":0}
+									},
+									"geometry-type": "org.locationtech.jts.geom.Polygon",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "NoiseContours_majorRoadsIncludingAgglomeration_Lnight.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 4,
+					"name": "Voidables",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "beginLifespanVersion",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "validFrom",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "validTo",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DATETIME",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.sql.Timestamp",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "PrimaryTable_id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "tableName",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "Voidables.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 5,
+					"name": "ExposureMajorRoad",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "reportingLevel",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "ESTATUnitCode",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "roadIdIdentifier",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "computationAndMeasurementMethod",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "receiverPointsInDwelling",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "referenceLink",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false
+							},
+							"propertyType": {
+								"ref": 12
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "ExposureMajorRoad.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 6,
+					"name": "ExposureValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "ESTATUnitCode",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "roadIdIdentifier",
+							"constraints": {
+								"cardinality": "0..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "exposureType",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 11
+							}
+						},
+						{
+							"name": "noiseLevel",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 8
+							}
+						},
+						{
+							"name": "exposedPeople",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "exposedArea",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "DOUBLE",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Double",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "exposedDwellings",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "exposedHospitals",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "exposedSchools",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "ExposureValue.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 7,
+					"name": "ESTATUnitReference",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"abstract": false,
+						"binding": "eu.esdihumboldt.hale.common.instance.model.Instance",
+						"has-value": false,
+						"mappable": true,
+						"mapping-relevant": true,
+						"primary-key": [{"@type":"qualified-name","@value":"id"}]
+					},
+					"declares": [
+						{
+							"name": "ESTATNUTSReferenceTitle",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "ESTATNUTSReferenceLink",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 12
+							}
+						},
+						{
+							"name": "ESTATLAUReferenceTitle",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"name": "TEXT",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.String",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						},
+						{
+							"name": "ESTATLAUReferenceLink",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": true
+							},
+							"propertyType": {
+								"ref": 12
+							}
+						},
+						{
+							"name": "id",
+							"constraints": {
+								"cardinality": "1..1",
+								"nillable": false,
+								"unique-context": "ESTATUnitReference.id"
+							},
+							"propertyType": {
+								"name": "INTEGER",
+								"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+								"constraints": {
+									"binding": "java.lang.Long",
+									"has-value": true,
+									"mappable": false,
+									"mapping-relevant": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "CategoryType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"enumeration": {
+							"@type": "properties",
+							"@value": {"allowOthers":false,"values":["Lden4044","Lden4549","Lden5054","Lden5559","Lden6064","Lden6569","Lden7074","LdenGreaterThan75","LdenLowerThan40","Lnight4044","Lnight4549","Lnight5054","Lnight5559","Lnight6064","Lnight6569","LnightGreaterThan70","LnightLowerThan40","Lden40","Lden45","Lden50","Lden55","Lden60","Lden65","Lden70","Lden75","Lnight40","Lnight45","Lnight50","Lnight55","Lnight60","Lnight65","Lnight70"]}
+
+						},
+						"mappable": true,
+						"mapping-relevant": false,
+						"validation": {
+							"@type": "validator",
+							"@value": {"type":"and","config":[{"@type":"validator","@value":{"type":"enumeration","config":["Lden4044","Lden4549","Lden5054","Lden5559","Lden6064","Lden6569","Lden7074","LdenGreaterThan75","LdenLowerThan40","Lnight4044","Lnight4549","Lnight5054","Lnight5559","Lnight6064","Lnight6569","LnightGreaterThan70","LnightLowerThan40","Lden40","Lden45","Lden50","Lden55","Lden60","Lden65","Lden70","Lden75","Lnight40","Lnight45","Lnight50","Lnight55","Lnight60","Lnight65","Lnight70"]}}]}
+
+						}
+					}
+				},
+				{
+					"id": 9,
+					"name": "NoiseSourceTypeValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"enumeration": {
+							"@type": "properties",
+							"@value": {"allowOthers":false,"values":["roadsInAgglomeration","majorRoadsIncludingAgglomeration","railwaysInAgglomeration","majorRailwaysIncludingAgglomeration","airportsInAgglomeration","majorAirportsIncludingAgglomeration","industryInAgglomeration","allSourcesInAgglomeration"]}
+
+						},
+						"mappable": true,
+						"mapping-relevant": false,
+						"validation": {
+							"@type": "validator",
+							"@value": {"type":"and","config":[{"@type":"validator","@value":{"type":"enumeration","config":["roadsInAgglomeration","majorRoadsIncludingAgglomeration","railwaysInAgglomeration","majorRailwaysIncludingAgglomeration","airportsInAgglomeration","majorAirportsIncludingAgglomeration","industryInAgglomeration","allSourcesInAgglomeration"]}}]}
+
+						}
+					}
+				},
+				{
+					"id": 10,
+					"name": "NoiseSourceValue",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"enumeration": {
+							"@type": "properties",
+							"@value": {"allowOthers":false,"values":["agglomerationAir","agglomerationAllSources","agglomerationIndustry","agglomerationMajorAirport","agglomerationMajorRailway","agglomerationMajorRoad","agglomerationRailway","agglomerationRoad","allSources","majorAirport","majorAllSources","majorRailway","majorRoad"]}
+
+						},
+						"mappable": true,
+						"mapping-relevant": false,
+						"validation": {
+							"@type": "validator",
+							"@value": {"type":"and","config":[{"@type":"validator","@value":{"type":"enumeration","config":["agglomerationAir","agglomerationAllSources","agglomerationIndustry","agglomerationMajorAirport","agglomerationMajorRailway","agglomerationMajorRoad","agglomerationRailway","agglomerationRoad","allSources","majorAirport","majorAllSources","majorRailway","majorRoad"]}}]}
+
+						}
+					}
+				},
+				{
+					"id": 11,
+					"name": "ExposureType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"enumeration": {
+							"@type": "properties",
+							"@value": {"allowOthers":false,"values":["mostExposedFacade","mostExposedFacadeIncludingAgglomeration","withQuietFacade","withSpecialInsulation"]}
+
+						},
+						"mappable": true,
+						"mapping-relevant": false,
+						"validation": {
+							"@type": "validator",
+							"@value": {"type":"and","config":[{"@type":"validator","@value":{"type":"enumeration","config":["mostExposedFacade","mostExposedFacadeIncludingAgglomeration","withQuietFacade","withSpecialInsulation"]}}]}
+
+						}
+					}
+				},
+				{
+					"id": 12,
+					"name": "URLType",
+					"namespace": "http://www.esdi-humboldt.eu/hale/gpkg",
+					"constraints": {
+						"binding": "java.lang.String",
+						"has-value": true,
+						"mappable": false,
+						"mapping-relevant": false,
+						"validation": {
+							"@type": "validator",
+							"@value": {
+								"type":"and",
+								"config":[
+									{
+										"@type":"validator",
+										"@value":{
+											"type":"pattern",
+											"config":"(https|http)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]"
+										}
+									}
+								]
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}

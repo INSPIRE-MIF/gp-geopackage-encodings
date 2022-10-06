@@ -28,4 +28,9 @@ The examples below are examples of GeoPackage files that are currently provided.
         <td>Transport networks (roads, railways, airports), Area management, Human Health</td>
         <td>The new Environmental Noise Directive (END) reporting mechanism includes alignment between the END reporting obligations and INSPIRE data specifications (INSPIRE Directive). The selected format for spatial data exchange is GeoPackage. In the scope of the END reporting, we developed encoding rules for GeoPackage format based on the previous work on INSPIRE alternative encodings and simplification. This would allow a transformation between GeoPackage and GML (INSPIRE) formats. The predesigned GeoPackage templates for the END reporting have been developed to facilitate the reporting data flows in Reportnet 3.0, data transformation and creation of GeoPackage files. More information is published at https://www.eionet.europa.eu/reportnet/docs/noise , including GeoPackage templates and data samples (mostly simulated data based on previously reported noise data) in GeoPackage format. <br/><br/> END GeoPackage encoding guidelines: https://www.eionet.europa.eu/reportnet/docs/noise/guidelines/geopackage-encoding-rule-end.pdf <br/> GeoPackage templates: https://www.eionet.europa.eu/reportnet/docs/noise/templates</td>
     </tr>
+    <tr>
+        <td>IT</td>
+        <td>Geology</td>
+        <td>ISPRA has produced Italian Geological Map 100k as Geopackage.</td>
+    </tr>
 </table>

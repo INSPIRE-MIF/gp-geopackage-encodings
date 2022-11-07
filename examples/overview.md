@@ -31,6 +31,6 @@ The examples below are examples of GeoPackage files that are currently provided.
     <tr>
         <td>IT</td>
         <td>Geology</td>
-        <td>In the context of the GO-PEG EU project (https://www.go-peg.eu/), the Italian Institute for Environmental Protection and Research (ISPRA) - Department for The Geological Survey of Italy, has produced the Italian Geological Map 1:100k in Geopackage encoding. The map contains geological units, faults, folds, caves, landslides. This file can be downloaded at http://www.epsilon-italia.it/public/GO-PEG/GE-map-100k-full.gpkg. The related geopackage template can be downloaded at http://www.epsilon-italia.it/public/GO-PEG/GE-gpkg-template.gpkg </td>
+        <td>In the context of the GO-PEG EU project (https://www.go-peg.eu/), the Italian Institute for Environmental Protection and Research (ISPRA) - Department for The Geological Survey of Italy, has produced the Italian Geological Map 1:100k in Geopackage encoding. The map contains geological units, faults, folds, caves, landslides. This file can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/GE-map-100k-full.gpkg. The related geopackage template can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/GE-gpkg-template.gpkg </td>
     </tr>
 </table>

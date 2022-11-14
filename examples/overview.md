@@ -11,7 +11,7 @@ The examples below are examples of GeoPackage files that are currently provided.
     <tr>
         <td>DK</td>
         <td>Addresses</td>
-        <td>The Danish Agency for Data Supply has published a first draft of a GeoPackage file with all Danish addresses (11 GB). See the metadata at https://geodata-info.dk/srv/eng/catalog.search#/metadata/50b921ea-935e-d605-2287-4ee364046795, and see some background information in [the (updated) presentation from the 62nd MIG-T meeting](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/62nd+MIG-T+meeting+2020-07-02?preview=/527439698/580880283/20201012%20MIG-T%20GeoPackage%20-%20updated.pptx). See also https://github.com/INSPIRE-MIF/gp-geopackage-encodings/issues/5</td>
+        <td>The Danish Agency for Data Supply and Infrastructure has published all Danish addresses in a GeoPackage file. See the metadata at https://geodata-info.dk/srv/eng/catalog.search#/metadata/50b921ea-935e-d605-2287-4ee364046795, and the <a href="https://inspire.ec.europa.eu/sites/default/files/20221027_addresses_dk_gpkg.pdf">presentation</a> at the <a href="https://inspire.ec.europa.eu/events/inspire-good-practice-geopackage-and-implementation-practice-webinar">Good Practice webinar</a>. Both the <a href="./ad_template.gpkg">GeoPackage template</a> and the <a href="./ad_ogcgeopackage2gml.fmw">FME workspace to map from GeoPackage to GML</a> are available in this repo.</td>
     </tr>
     <tr>
         <td>FI</td>

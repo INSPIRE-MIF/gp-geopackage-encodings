@@ -33,4 +33,10 @@ The examples below are examples of GeoPackage files that are currently provided.
         <td>Geology</td>
         <td>In the context of the GO-PEG EU project (https://www.go-peg.eu/), the Italian Institute for Environmental Protection and Research (ISPRA) - Department for The Geological Survey of Italy, has produced the Italian Geological Map 1:100k in Geopackage encoding. The map contains geological units, faults, folds, caves, landslides. This file can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/GE-map-100k-full.gpkg. The related geopackage template can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/GE-gpkg-template.gpkg </td>
     </tr>
+        <tr>
+        <td>IT</td>
+        <td>Geology</td>
+        <td>The delivery of subsurface geological data deriving from geological 3D models suffers the lack of a dedicated data model and easy-to-use delivery format. In the Go-PEG project “Go-Depth use-case”, ISPRA - Geological Survey of Italy has developed an efficient approach to manage and deliver interoperable subsurface geological data using an INSPIRE-extended data model and geopackage INSPIRE alternative enconding. This approach fulfills the institutional mandates of the Geological Survey of Italy and will be the starting point for the ongoing design and implementation of the “Geological 3D subsurface models database” related to the National Geological Mapping Programme. Moreover, the model could be tested in EU initiatives (e.g. EPOS, Geological Mapping and Modeling Expert Group of EuroGeoSurveys) and furtherly implemented and extended in projects funded by NextGeneration EU national plan. The produced dataset related to Po Plain subsurface can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/Po_Basin_subsurface.gpkg. The related geopackage template can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/go-depth-ge-template.gpkg
+ </td>
+    </tr>
 </table>

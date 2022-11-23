@@ -1,8 +1,9 @@
 # Best practices for GeoPackage encodings
-This repository gathers best practices for GeoPackage encodings of INSPIRE datasets. The issue tracker serves as a place to discuss all kinds of issues with GeoPackage files and the GeoPackage specification.
+This repository gathers best practices for GeoPackage encodings of INSPIRE datasets. The issue tracker serves as a place to discuss all kinds of issues with GeoPackage files and the GeoPackage specification.<br>
+Contributions to this repository supported the proposed Good Practice for the GeoPackage encoding of INSPIRE datasets, whose specifications are made available [here](/spec/GeoPackage_Good_Practice_initiation_fiche.md).<br>
 
 ## Background
-On the 63rd MIG-meeting, it was decided to establish an ad-hoc group to facilitate discussions on GeoPackage encodings, see the [minutes of that meeting](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=559350289).<br>
+On the 63rd MIG-T meeting, it was decided to establish an ad-hoc group to facilitate discussions on GeoPackage encodings and to support the development of a  proposal for the GeoPackage encoding of INSPIRE datasets as a candidate Good Practice - see the [minutes of that meeting](https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=559350289).<br>
 On the 69th MIG-T meeting, the "_GeoPackage encoding of INSPIRE datasets_" was accepted as good practice candidate. The initiation fiche is available [here](/spec/GeoPackage_Good_Practice_initiation_fiche.md).<br>
 Following the [procedure for proposing and endorsing good practices](https://inspire.ec.europa.eu/portfolio/good-practice-library), a GeoPackage and implementation practice outreach webinar was held on October 27, 2022. Links to webinar recording and presentations can be found [here](https://inspire.ec.europa.eu/events/inspire-good-practice-geopackage-and-implementation-practice-webinar).
 

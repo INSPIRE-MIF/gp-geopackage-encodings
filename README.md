@@ -7,6 +7,8 @@ On the 63rd MIG-T meeting, it was decided to establish an ad-hoc group to facili
 On the 69th MIG-T meeting, the "_GeoPackage encoding of INSPIRE datasets_" was accepted as good practice candidate. The initiation fiche is available [here](/spec/GeoPackage_Good_Practice_initiation_fiche.md).<br>
 Following the [procedure for proposing and endorsing good practices](https://inspire.ec.europa.eu/portfolio/good-practice-library), a GeoPackage and implementation practice outreach webinar was held on October 27, 2022. Links to webinar recording and presentations can be found [here](https://inspire.ec.europa.eu/events/inspire-good-practice-geopackage-and-implementation-practice-webinar).
 
+On the 16th back to back MIG and MIG-T meeting on 24 and 25 November 2022, the "_GeoPackage encoding of INSPIRE datasets_" was unanimously endorsed as INSPIRE Good Practice - see the [minutes of that meeting](https://wikis.ec.europa.eu/display/InspireMIG/72nd+MIG-T+meeting+2022-11-25). 
+
 ## Relations to other actions
 The work done here is related to what has been done on alternative encodings, see https://github.com/INSPIRE-MIF/2017.2.
 

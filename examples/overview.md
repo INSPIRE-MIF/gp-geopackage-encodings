@@ -39,4 +39,17 @@ The examples below are examples of GeoPackage files that are currently provided.
         <td>The delivery of subsurface geological data deriving from geological 3D models suffers the lack of a dedicated data model and easy-to-use delivery format. In the Go-PEG project “Go-Depth use-case”, ISPRA - Geological Survey of Italy has developed an efficient approach to manage and deliver interoperable subsurface geological data using an INSPIRE-extended data model and geopackage INSPIRE alternative encoding. This approach fulfills the institutional mandates of the Geological Survey of Italy and will be the starting point for the ongoing design and implementation of the “Geological 3D subsurface models database” related to the National Geological Mapping Programme. Moreover, the model could be tested in EU initiatives (e.g. EPOS, Geological Mapping and Modeling Expert Group of EuroGeoSurveys) and furtherly implemented and extended in projects funded by NextGeneration EU national plan. The produced dataset related to Po Plain subsurface can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/Po_Basin_subsurface.gpkg. The related geopackage template can be downloaded at https://www.epsilon-italia.it/public/GO-PEG/go-depth-ge-template.gpkg
  </td>
     </tr>
+     <tr>
+        <td>EJPSOIL</td>
+        <td>Soil</td>
+        <td>In the context of the H2020 European Joint Research Programme <a href="https://ejpsoil.eu">EJPSOIL</a> and in particular in the creation of a 'Software framework for a common agricultural soil information system', a GeoPackage model has been developed by <a href="https://www.crea.gov.it/en/home">CREA</a> (Council for Agricultural Research and Economics of Italy) which is proposed as a specific implementation for the Soil data theme of the GP on GeoPackage encoding of INSPIRE datasets. 
+        As required by the GP specification, the following evidence has been provided:
+1)a description of the <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template/blob/main/docs/EJP SOIL Encoding rules of the D6.4  Software framework for a shared agricultural soil information system.pdf">UML-to-Geopackage model transformation rules</a> 
+2)an <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template/blob/main/geopackage/INSPIRE_SO_V01.gpkg">empty geopackage template </a>acting as database schema (also provided via SQL scripts)
+3)an <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template/tree/main/halestudio">executable model</a> for data transformation of GeoPackage datasets into INSPIRE GML datasets. Specifically, this executable model is provided in the form of a hale studio project.
+4)a <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template/blob/main/docs/EJPSOIL-sample-soil-data-set.gml">sample GML dataset</a> obtained through the above-mentioned data transformation project, containing both soil spatial objects and related observations and <a href="https://github.com/ejpsoil/inspire_soil_gpkg_template/blob/main/docs/Test run on 18_37 - 24.01.2024 with test suite Annex III - Soil (SO).html">successfully validated</a> against INSPIRE Soil requirements using the INSPIRE Validator.
+It is worth highlighting that, even if not strictly required by the Good Practice, this model also makes use of triggers to enforce constraints of the INSPIRE UML data model and maintain data integrity.
+
+ </td>
+    </tr> 
 </table>
